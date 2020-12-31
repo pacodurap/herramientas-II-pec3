@@ -1,0 +1,98 @@
+/**
+ * Import variables
+ */
+
+@tailwind base;
+@tailwind components;
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import "layouts/home";
+@import "layouts/bands";
+@import "layouts/info";
+
+@font-face {
+  font-family: pilowlava;
+  src: url(../fonts/Pilowlava-Regular.woff2);
+}
+  
+@font-face {
+  font-family: magic;
+  src: url(../fonts/magic.ttf);
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+  font-family: pilowlava, Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+h3 {
+  font-family: pilowlava, Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+main {
+  background: rgb(255, 255, 127);
+  background: linear-gradient(0deg, rgb(255, 255, 127) 0%, rgb(107, 176, 255) 100%);
+}
+
+.logo {
+  font-family: magic, Arial, Helvetica, sans-serif;
+}
+
+nav a,
+footer i {
+  margin-left: 1em;
+}
+
+.writing-vrl {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+}
+
+@tailwind utilities;
+
+@layer components {
+  .poster-artist-x {
+    @apply flex justify-center items-center m-0 ;
+  }
+
+  .poster-artist-y {
+    @apply flex justify-center items-center m-0 writing-vrl ;
+  }
+
+  .nav-link {
+    @apply text-primary hover:text-secondary ;
+  }  
+  
+}
+
+/**
+ * Do NOT include anything else in this file!
+ */

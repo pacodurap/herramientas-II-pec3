@@ -1,0 +1,18 @@
+@use "sass:color";
+
+$theme-colors: ("primary": #cabada // pon el código de color que prefieras
+);
+
+$font-family-sans-serif: -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia",
+  "Times New Roman",
+  serif;
