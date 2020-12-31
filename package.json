@@ -40,9 +40,12 @@
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-scss": "^3.18.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "tailwindcss": "^2.0.1-compat"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1"
+  },
+  "resolutions": {
+    "postcss": "^7"
   }
 }
